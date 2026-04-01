@@ -17,8 +17,25 @@
   "license": "ISC",
   "author": "Francesc Amill (Eines Web)",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "browserslist": [
+    "Chrome >= 49",
+    "Firefox >= 45",
+    "Edge >= 12",
+    "Safari >= 10",
+    "iOS >= 10",
+    "Android >= 5"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "posthtml-include": "^2.0.1",
+    "sass": "^1.98.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
