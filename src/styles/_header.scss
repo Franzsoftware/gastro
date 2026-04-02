@@ -1,0 +1,41 @@
+
+.box_header {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+img {
+    flex: 1;
+    max-width: 110px;
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.ul_nav {
+    display: flex;
+    gap: 90px;
+}
+
+.ul_nav li {
+    list-style-type: none; 
+}
+
+.ul_nav li a {
+    text-decoration: none;
+    color: var(--color_primary);
+}
+
+.ul_nav li a:hover {
+    text-decoration: none;
+    color: rgb(250, 202, 29);
+}

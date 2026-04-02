@@ -1,21 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="./main.scss" />
         <script type="module" src="./main.js"></script>
-        <title>Web Gastro</title>
+        <title>Web Gastro | Restaurante</title>
     </head>
 
     <body>
-        <h1>Gastro</h1>
+   
+        <include src="src/partials/header.html"></include>  
+        <main>
+            
+            <!-- Contingut home -->
 
-        <h2 data-aos="fade-right">Web de Gastronomia</h2>
+            <section class="hero">
+                <div class="hero_content">
+                    <h1 class="hero_title">Descubre la esencia de la gastronomía</h1>
+                    <p class="hero_desc">Explora sabores únicos, restaurantes excepcionales y experiencias culinarias
+                        pensadas para quienes disfrutan de la buena comida</p>
+                </div>
+            </section>
+            
+            <section class="intro">
+                <h2 data-aos="fade-up" data-aos-delay="100" class="historia_title">Nuestra historia</h2>
+                <p class="historia_subtitle">
+                    Hemos creado un espacio donde la gastronomía se vive con pasión,
+                    combinando tradición, innovación y experiencias únicas en cada plato
+                </p>
+                <article class="historia_content">
+                    <p>
+                        En Gastro creemos que la cocina es mucho más que una necesidad: 
+                        es una forma de arte. Seleccionamos cuidadosamente cada propuesta 
+                        gastronómica para ofrecerte experiencias auténticas, donde la calidad 
+                        y el detalle marcan la diferencia. Apostamos por restaurantes que 
+                        transmiten esencia, creatividad y respeto por el producto.
+                    </p>
+                
+                    <p>
+                        Nuestro objetivo es acercarte a los mejores rincones culinarios, 
+                        desde opciones tradicionales hasta propuestas innovadoras. 
+                        Descubre nuevos sabores, explora tendencias y déjate sorprender 
+                        por una selección pensada para verdaderos amantes de la buena mesa.
+                    </p>
+            
+                </article>
+            </section>
 
-        <div  data-aos="fade-up">
-           
-        </div>
+            <section class="chef">
+                
+                <div class="chef_info">
+                    <h3 class="chef_title">Donde la tradición marca el camino al éxito</h3>
+                    <p class="chef_content">
+                        La cocina trata sobre las personas. La comida es quizá lo único verdaderamente universal que 
+                        tiene el poder de unir a todos. No importa la cultura ni el lugar del mundo, 
+                        las personas siempre se reúnen para compartir una comida. Descubre nuestras categorías
+                    </p>
+                    <a data-aos="fade-up" href="./index.html/#contacto" title="Contacto" class="btn_cat">Contacto</a>
+                </div>
+                <div class="chef_pic">
+                    <img src="./images/home/gastro-ternera.jpg" alt="Imagen de un plato de ternera con salsa" title="Plato de ternera con salsa" />
+                </div>
+
+            </section>
+
+            <section class="place">
+                <div class="place_img">
+                    <img src="./images/home/restaurante-interior.jpg" alt="Imagen del interior del restaurante" title="Interior del restaurante" />
+                </div>
+
+                <div class="place_content">
+                    <h3 class="place_cont_title">Experiencias privadas en Gastro</h3>
+                    <h4 class="place_cont_subtitle">
+                        Disfruta de un espacio exclusivo donde la gastronomía se convierte en una experiencia íntima y memorable. 
+                        En Gastro cuidamos cada detalle para ofrecerte un ambiente elegante, perfecto para celebraciones, 
+                        reuniones o momentos especiales.
+                    </h4>
+                    <p class="place_cont_desc">
+                        Nuestro equipo de cocina elabora menús a medida utilizando ingredientes de temporada y productos de la más alta calidad, 
+                        combinando tradición y creatividad en cada elaboración. Déjate sorprender por una propuesta gastronómica que va más allá 
+                        del sabor y se convierte en una auténtica experiencia sensorial. Además, ofrecemos la posibilidad de personalizar cada menú según tus preferencias, creando un recorrido culinario adaptado a cada evento. 
+                        En Gastro no solo servimos comida, sino que creamos momentos que perduran en el recuerdo.
+                    </p>
+                     <a data-aos="fade-up" href="./index.html/#blog" title="Novedades" class="btn_cat btn_blog">Novedades</a>
+                </div>
+            </section>
+
+            <section class="cat_desc">
+                <h3 class="cat_desc_title">Nuestras categorías</h3>
+                <p class="cat_desc_cont">
+                    Descubre una selección cuidada de platos pensados para todos los gustos. Desde propuestas tradicionales 
+                    hasta creaciones más innovadoras, cada categoría reúne sabores únicos elaborados con ingredientes de calidad 
+                    y una atención especial a cada detalle.
+                </p>
+
+            </section>
+
+            <section class="categorias">
+                <div class="cat">
+                    <img src="./images/categorias/postre.png" alt="Imagen de plato con postres" title="Postre" />
+                    <span class="cat_title">Postres</span>
+                </div>
+                
+                <div class="cat">
+                    <img src="./images/categorias/pollo.png" alt="Imagen de plato con pollo" title="Pollo" />
+                    <span class="cat_title">Carne blanca</span>
+                </div>
+                
+                <div class="cat">
+                    <img src="./images/categorias/sandwich.png" alt="Imagen de plato con Sandwich" title="Sandwich" />
+                    <span class="cat_title">Ternera</span>
+                </div>
+            </section>
+            
+            <section class="btn_cat_box">
+                <a data-aos="fade-up" href="./categoria/index.html" title="Categorias" class="btn_cat btn_cat">Categorias</a>
+            </section>
+
+        </main>
+
+        <include src="src/partials/footer.html"></include>
+
     </body>
 </html>
 
