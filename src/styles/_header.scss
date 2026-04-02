@@ -39,3 +39,56 @@ nav {
     text-decoration: none;
     color: rgb(250, 202, 29);
 }
+
+/* hamburger */
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: var(--color_primary);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .box_header {
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #e1e0e0;
+        display: none;
+        z-index: 1;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .ul_nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .ul_nav li a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    .ul_nav li a:hover {
+        color: rgb(213, 77, 4);
+    }
+
+}
+

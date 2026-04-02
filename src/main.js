@@ -17,3 +17,23 @@ cards.forEach(card => {
         card.classList.remove('hover');
     })
 });
+
+// Hamburger menú
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.getElementById('nav');
+const icon = hamburger.querySelector('i');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+
+    if(nav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+});
+
+
