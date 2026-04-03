@@ -1,0 +1,182 @@
+@import "./styles/header";
+@import "./styles/footer";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color_primary: #fff;
+    --color_second: #00bbb8;
+    --color_texto: #263238;
+    --color_title: #ab7841;
+    --color_hover: rgb(250, 202, 29);
+    --font_family: 'Poppins', sans-serif;
+}
+
+/* hero */
+
+.hero {
+    background-image: url(./images/categorias/tacos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.hero_content {
+    position: relative;
+    z-index: 1;
+    color: var(--color_primary);
+    text-align: center;
+    max-width: 600px;
+    padding: 140px;
+}
+
+.hero_title {
+    font-size: clamp(20px, 5vw, 30px);
+    margin-bottom: 40px;
+}
+
+.hero_desc {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+@media (max-width: 768px) {  
+    .hero_desc {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .hero_content {
+        padding: 20px 30px;
+    }
+}
+
+/* seccion place */
+
+.place {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    margin: 110px 95px;
+}
+
+@media (max-width: 1368px) {
+    .place {
+        grid-template-columns: 1fr;
+        margin: 60px 30px;
+    }
+}
+
+/* place imagen */
+
+.place_img {
+    width: 75%;
+    margin: 0 auto;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.place_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 1370px) {
+    .place_img {
+        width: 60%;     
+        margin: 0 auto;  
+    }
+
+    .place_img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .place_img {
+        width: 70%;         
+        margin: 0 auto;     
+    }
+
+    .place_img img {
+        width: 100%;        
+        height: auto;        
+    }
+}
+
+/* place content */
+
+.place_content {
+    padding: 20px 80px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.place_cont_title {
+    margin: 20px 0;
+    color: var(--color_title);
+}
+
+.place_cont_subtitle, .place_cont_desc {
+    margin: 20px 0;
+}
+
+.btn_blog {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .place {
+        margin: 70px 30px;
+    }
+   
+    .place_content {
+        padding: 10px 10px;
+    }
+}
+
+/* video */
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20%;
+    height: 0;
+}
+
+@media (max-width: 768px) {
+   .video {
+     padding-bottom: 50%;
+   }
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

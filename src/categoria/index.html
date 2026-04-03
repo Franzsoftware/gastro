@@ -5,23 +5,137 @@
         <meta name="viewport" content="width=device-width"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="./main.scss" />
-        <script type="module" src="./main.js"></script>
+        <link rel="stylesheet" href="../main.scss" />
+        <link rel="stylesheet" href="../categoria.scss" />
+        <script type="module" src="../main.js"></script>
         <title>Web Gastro | Restaurante</title>
     </head>
 
     <body>
    
-        <include src="partials/header.html"></include>  
-        <main>
+        <header class="box_header">
+    
+            <a href="../index.html"><img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /></a>
 
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
 
+            <nav id="nav">
+                <ul class="ul_nav">
+                    <li><a href="../index.html" title="Página de Inicio">Inicio</a></li>
+                    <li><a href="../categoria/index.html" title="Página de Categorias">Categorias</a></li>
+                    <li><a href="../links/index.html" title="Página de Enlaces">Enlaces</a></li> 
+                </ul>
+            </nav>
 
+        </header>
+        
+        <main class="categoria_page">
+        
+             <section class="categorias">
+                <div class="cat">
+                    <a href="../det1/index.html" title="Postres">
+                        <img src="../images/categorias/postres.png" alt="Imagen de plato con postres" title="Postre" />
+                        <span class="cat_title">Postres</span>
+                    </a>
+                </div>
+
+                <div class="cat">
+                    <a href="../det2/index.html" title="Tacos">
+                        <img src="../images/categorias/tacos.png" alt="Imagen de plato de Mexicano" title="Mexicano" />
+                        <span class="cat_title">Mexicano</span>
+                    </a>
+                </div>
+                
+                <div class="cat">
+                    <a href="../det3/index.html" title="Japones">
+                        <img src="../images/categorias/japones.png" alt="Imagen de plato Japonés" title="Japonés" />
+                        <span class="cat_title">Japonés</span>
+                    </a>
+                </div>
+                
+            </section>
+
+             <section class="categorias">
+                <div class="cat">
+                    <a href="../det4/index.html" title="Vegano">
+                        <img src="../images/categorias/vegano.png" alt="Imagen de plato Vegano" title="Vegano" />
+                        <span class="cat_title">Vegano</span>
+                    </a>
+                </div>
+                
+                <div class="cat">
+                     <a href="../det5/index.html" title="Arroces">
+                        <img src="../images/categorias/paellero.png" alt="Imagen de plato de Arróz" title="Arroces" />
+                        <span class="cat_title">Arroces</span>
+                    </a>
+                </div>
+                
+                <div class="cat">
+                    <a href="../det6/index.html" title="Sin gluten">
+                        <img src="../images/categorias/sin_gluten_plato.png" alt="Imagen de plato de comida sin gluten" title="Sin gluten" />
+                        <span class="cat_title">Sin gluten</span>
+                    </a>
+                </div>
+            </section>
+
+             <section class="categorias">
+                <div class="cat">
+                    <a href="../det7/index.html" title="Mediterraneo">
+                        <img src="../images/categorias/pollo.png" alt="Imagen de plato con pollo" title="Mediterraneo" />
+                        <span class="cat_title">Mediterraneo</span>
+                    </a>
+                </div>
+                
+                <div class="cat">
+                    <a href="../det3/index.html" title="Ensaladas">
+                        <img src="../images/categorias/ensalada.png" alt="Imagen de plato con Ensalada" title="Ensaladas" />
+                        <span class="cat_title">Ensaladas</span>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="../det3/index.html" title="Italiano">
+                        <img src="../images/categorias/pasta.png" alt="Imagen de plato con pasta" title="Italiano" />
+                        <span class="cat_title">Italiano</span>
+                    </a>
+                </div>
+            </section>
 
         </main>
 
-    
+        <footer class="box_footer">
+
+            <section class="box_foot">
+                <img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /> 
+                <p class="p_foot">Gastro es una plataforma dedicada a los amantes de la buena comida. 
+                    Descubre restaurantes, explora nuevas tendencias culinarias y encuentra 
+                    recomendaciones cuidadosamente seleccionadas para disfrutar de experiencias 
+                    gastronómicas únicas en cada ocasión.</p>
+            </section>
+
+            <section class="box_foot" id="contacto">
+                <h4 class="title_des_foot">Información de contacto</h4>
+                <ul>
+                    <li>Teléfono: +34 600 123 456 </li>
+                    <li>Email: info@gastro.com</li>
+                    <li>Dirección: Barcelona, España</li>
+                    <li>Horario: Lun - Dom: 9:00 - 22:00</li>
+                </ul>
+            </section>
+
+            <section class="box_foot">
+                <h4 class="title_des_foot">Síguenos</h4>
+                <ul>
+                    <li><a href="#" title="Instagram">Instagram</a></li>
+                    <li><a href="#" title="Facebook">Facebook</a></li>
+                    <li><a href="#" title="Twitter">Twitter (X)</a></li>
+                    <li><a href="#" title="YouTube">YouTube</a></li>
+                </ul>
+            </section>
+
+        </footer>   
 
     </body>
 
-    </html>
+</html>

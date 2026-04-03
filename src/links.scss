@@ -1,0 +1,30 @@
+
+.enlaces_page {
+    margin: 30px;
+    padding: 40px;
+}
+
+.enlaces_page h1 {
+    font-size: 20px;
+    margin: 30px 0;
+    color: var(--color_title);
+}
+
+.enlaces_page section {
+    margin: 30px 0;
+}
+
+.enlaces_page  h2, .enlaces_page h3 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.enlaces_page p a {
+    text-decoration: none;
+    color: var(--color_title);
+    font-weight: bold;
+}
+
+.enlaces_page p a:hover {
+    color: rgb(214, 55, 6);
+}
