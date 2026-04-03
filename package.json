@@ -18,8 +18,8 @@
   "author": "Francesc Amill (Eines Web)",
   "type": "module",
  "scripts": {
-  "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html",
-  "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html"
+  "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html",
+  "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html"
   },
   "browserslist": [
     "Chrome >= 49",
