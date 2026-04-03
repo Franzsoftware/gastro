@@ -17,9 +17,9 @@
   "license": "ISC",
   "author": "Francesc Amill (Eines Web)",
   "type": "module",
-  "scripts": {
+ "scripts": {
   "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html",
-  "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html --public-url ./"
+  "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/links/index.html"
   },
   "browserslist": [
     "Chrome >= 49",
