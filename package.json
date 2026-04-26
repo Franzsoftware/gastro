@@ -17,9 +17,9 @@
   "license": "ISC",
   "author": "Francesc Amill (Eines Web)",
   "type": "module",
- "scripts": {
-  "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html",
-  "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html"
+  "scripts": {
+    "dev": "parcel src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html",
+    "build": "parcel build src/index.html src/categoria/index.html src/det1/index.html src/det2/index.html src/det3/index.html src/det4/index.html src/det5/index.html src/det6/index.html src/det7/index.html src/det8/index.html src/det9/index.html src/links/index.html"
   },
   "browserslist": [
     "Chrome >= 49",
@@ -33,7 +33,8 @@
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4",
     "posthtml-include": "^2.0.1",
-    "sass": "^1.98.0"
+    "sass": "^1.98.0",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
     "aos": "^2.3.4"

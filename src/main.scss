@@ -20,7 +20,7 @@
 /* hero */
 
 .hero {
-    background-image: url(./images/home/hero.jpg);
+    background-image: url(./images/home/hero-1200.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,6 +29,18 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        background-image: url(./images/home/hero-800.webp);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: url(./images/home/hero-600.webp);
+    }
 }
 
 .hero::before {
@@ -67,7 +79,6 @@
         padding: 20px 30px;
     }
 }
-
 
 /* historia */
 

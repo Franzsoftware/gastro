@@ -79,16 +79,45 @@
                     <a data-aos="fade-up" href="./index.html/#contacto" title="Contacto" class="btn_cat">Contacto</a>
                 </div>
                 <div class="chef_pic">
-                    <img src="./images/home/gastro-ternera.jpg" alt="Imagen de un plato de ternera con salsa" title="Plato de ternera con salsa" />
+                    <picture>
+                        <source srcset="
+                            ./images/home/gastro-ternera-600.avif 600w,
+                            ./images/home/gastro-ternera-800.avif 800w,
+                            ./images/home/gastro-ternera-1200.avif 1200w
+                        " type="image/avif" sizes="(max-width: 600px) 100vw, 50vw">
+                        
+                        <source srcset="
+                            ./images/home/gastro-ternera-600.webp 600w,
+                            ./images/home/gastro-ternera-800.webp 800w,
+                            ./images/home/gastro-ternera-1200.webp 1200w
+                        " type="image/webp" sizes="(max-width: 600px) 100vw, 50vw">
+
+                        <img src="./images/home/gastro-ternera.jpg" alt="Imagen de un plato de ternera con salsa" title="Plato de ternera con salsa" loading="lazy" />
+                    </picture>
+                
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="./images/home/restaurante-interior.jpg" alt="Imagen del interior del restaurante" title="Interior del restaurante" />
-                </div>
+                    <picture>
+                        <source srcset="
+                            ./images/home/restaurante-interior-600.avif 600w,
+                            ./images/home/restaurante-interior-800.avif 800w,
+                            ./images/home/restaurante-interior-1200.avif 1200w
+                        " type="image/avif" size="(max-width:600px) 100vw, 50vw"> 
 
+                         <source srcset="
+                            ./images/home/restaurante-interior-600.webp 600w,
+                            ./images/home/restaurante-interior-800.webp 800w,
+                            ./images/home/restaurante-interior-1200.webp 1200w
+                        " type="image/webp" size="(max-width:600px) 100vw, 50vw"> 
+
+                        <img src="./images/home/restaurante-interior.jpg" alt="Imagen del interior del restaurante" title="Interior del restaurante" loading="lazy" />
+                    </picture>
+                </div>
+                
                 <div class="place_content">
                     <h3 class="place_cont_title">Experiencias privadas en Gastro</h3>
                     <h4 class="place_cont_subtitle">
@@ -117,17 +146,62 @@
 
             <section class="categorias">
                 <div class="cat">
-                    <img src="./images/categorias/postres.png" alt="Imagen de plato con postre" title="Postres" />
+                    <picture>
+                          <source srcset="
+                            ./images/categorias/postres-600.avif 600w,
+                            ./images/categorias/postres-800.avif 800w,
+                            ./images/categorias/postres-1200.avif 1200w
+                        " type="image/avif" size="(max-width:600px) 100vw, 50vw"> 
+
+                         <source srcset="
+                            ./images/categorias/postres-600.webp 600w,
+                            ./images/categorias/postres-800.webp 800w,
+                            ./images/categorias/postres-1200.webp 1200w
+                        " type="image/webp" size="(max-width:600px) 100vw, 50vw">    
+
+                        <img src="./images/categorias/postres.png" alt="Imagen de plato con postre" title="Postres" loading="lazy"/>
+                    </picture>
+                    
                     <span class="cat_title">Postres</span>
                 </div>
                 
                 <div class="cat">
-                    <img src="./images/categorias/tacos.png" alt="Imagen de plato con tacos mejicanos" title="Tacos" />
+                    <picture>
+                        <source srcset="
+                            ./images/categorias/tacos-600.avif 600w,
+                            ./images/categorias/tacos-800.avif 800w,
+                            ./images/categorias/tacos-1200.avif 1200w
+                        " type="image/avif" size="(max-width:600) 100vw, 50vw"> 
+
+                        <source srcset="
+                            ./images/categorias/tacos-600.webp 600w,
+                            ./images/categorias/tacos-800.webp 800w,
+                            ./images/categorias/tacos-1200.webp 1200w
+                        " type="image/webp" size="(max-width:600) 100vw, 50vw"> 
+
+                        <img src="./images/categorias/tacos.png" alt="Imagen de plato con tacos mejicanos" title="Tacos" loading="lazy" />     
+                    </picture>
+                    
                     <span class="cat_title">Mejicano</span>
                 </div>
                 
                 <div class="cat">
-                    <img src="./images/categorias/japones.png" alt="Imagen de plato con comida japonesa" title="Japonés" />
+                    <picture>
+                        <source srcset="
+                            ./images/categorias/japones-600.avif 600w,
+                            ./images/categorias/japones-800.avif 800w,
+                            ./images/categorias/japones-1200.avif 1200w
+                        " type="image/avif" size="(max-width:600) 100vw, 50vw"> 
+
+                        <source srcset="
+                            ./images/categorias/japones-600.webp 600w,
+                            ./images/categorias/japones-800.webp 800w,
+                            ./images/categorias/japones-1200.webp 1200w
+                        " type="image/webp" size="(max-width:600) 100vw, 50vw">
+
+                        <img src="./images/categorias/japones.png" alt="Imagen de plato con comida japonesa" title="Japonés" loading="lazy" />
+                    </picture>
+                
                     <span class="cat_title">Japonés</span>
                 </div>
             </section>
