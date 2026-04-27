@@ -32,20 +32,46 @@
         </header>
         
         <main class="det1_page">
-        
-            <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/postres-mobil.png"
+                    type="image/png">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/postres.png"
+                    type="image/png">
+
+                    <img 
+                    src="../images/categorias/postres.png"
+                    alt="Postre de pistacho"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/postres.png" alt="Imagen de plato con postres" title="Postre" />
+                    <img src="../images/categorias/postres.png" alt="Imagen de plato con tacos" title="Tacos" />
                     <h1 class="hero_title">Descubre el mundo de los postres</h1>
                     <p class="hero_desc">Sumérgete en una experiencia dulce donde cada creación combina sabor, creatividad y pasión por la repostería</p>
                 </div>
             </section>
-
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/postre-casero.png" alt="Imagen de postre casero waffle" title="Waffle" />
+                    <picture>
+                        <source srcset="
+                            ../images/detalls/postre-casero-600.avif 600w,
+                            ../images/detalls/postre-casero-800.avif 800w,
+                            ../images/detalls/postre-casero-1200.avif 1200w
+                        " type="image/avif">
+
+                        <source srcset="
+                            ../images/detalls/postre-casero-600.webp 600w,
+                            ../images/detalls/postre-casero-800.webp 800w,
+                            ../images/detalls/postre-casero-1200.webp 1200w
+                        " type="image/webp">
+
+                        <img src="../images/detalls/postre-casero.png" alt="Imagen de postre casero waffle" title="Waffle" loading="lazy"/>
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -82,14 +108,42 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/postre-helado.png" alt="Imagen de postre con helado" title="Postre de helado" />
+                    <picture>
+                        <source srcset="
+                                ../images/detalls/postre-helado-600.avif 600w,
+                                ../images/detalls/postre-helado-800.avif 800w,
+                                ../images/detalls/postre-helado-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source srcset="
+                                ../images/detalls/postre-helado-600.webp 600w,
+                                ../images/detalls/postre-helado-800.webp 800w,
+                                ../images/detalls/postre-helado-1200.webp 1200w
+                            " type="image/webp">
+
+                        <img src="../images/detalls/postre-helado.png" alt="Imagen de postre con helado" title="Postre de helado" loading="lazy" />
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/brownie.jpg" alt="Imagen de brownie" title="Brownie" />
+                    <picture>
+                        <source srcset="
+                                ../images/detalls/brownie-600.avif 600w,
+                                ../images/detalls/brownie-800.avif 800w,
+                                ../images/detalls/brownie-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source srcset="
+                                ../images/detalls/brownie-600.webp 600w,
+                                ../images/detalls/brownie-800.webp 800w,
+                                ../images/detalls/brownie-1200.webp 1200w
+                            " type="image/webp">
+
+                        <img src="../images/detalls/brownie.jpg" alt="Imagen de brownie" title="Brownie" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
