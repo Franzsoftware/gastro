@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía mexicana a través de los tacos. Sabores intensos, ingredientes frescos y recetas tradicionales que convierten cada plato en una experiencia única.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../main.scss" />
@@ -35,9 +36,25 @@
         
             <!-- Contingut home -->
 
-            <section class="hero">
+             <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/tacos-600.webp"
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/tacos-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/tacos.png"
+                    alt="Plato de tacos"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/tacos.png" alt="Imagen de plato con tacos" title="Tacos" />
+                    <img src="../images/categorias/tacos.png" alt="Imagen de plato con tacos" title="Tacos"/>
                     <h1 class="hero_title">Descubre la esencia de la gastronomía mexicana</h1>
                     <p class="hero_desc">Explora sabores intensos, ingredientes frescos y recetas 
                         tradicionales que convierten cada plato en una experiencia única llena de color y sabor</p>
@@ -46,7 +63,25 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/categorias/tacos.png" alt="Imagen de plato combinado de tacos" title="Tacos" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/categorias/tacos-600.avif 600w,
+                                ../images/categorias/tacos-800.avif 800w,
+                                ../images/categorias/tacos-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                               sizes="(max-width: 768px) 100vw, 50vw"
+                               srcset="
+                                ../images/categorias/tacos-600.webp 600w,
+                                ../images/categorias/tacos-800.webp 800w,
+                                ../images/categorias/tacos-1200.webp 1200w
+                            " type="image/webp">
+
+                        <img src="../images/categorias/tacos.png" alt="Imagen de plato combinado de tacos" title="Tacos" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -82,7 +117,24 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/categorias/tacos-carne.jpg" alt="Imagen de plato con tacos" title="Tacos" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/categorias/tacos-carne-600.avif 600w,
+                                ../images/categorias/tacos-carne-800.avif 800w,
+                                ../images/categorias/tacos-carne-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                               sizes="(max-width: 768px) 100vw, 50vw"
+                               srcset="
+                                ../images/categorias/tacos-carne-600.webp 600w,
+                                ../images/categorias/tacos-carne-800.webp 800w,
+                                ../images/categorias/tacos-carne-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/categorias/tacos-carne.jpg" alt="Imagen de plato con tacos" title="Tacos" loading="lazy"/>
+                    </picture>
                 </div>
 
             </section>
@@ -90,7 +142,24 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/categorias/nachos.jpg" alt="Imagen de plato de nachos" title="Nachos" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/categorias/nachos-600.avif 600w,
+                                ../images/categorias/nachos-800.avif 800w,
+                                ../images/categorias/nachos-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                               sizes="(max-width: 768px) 100vw, 50vw"
+                               srcset="
+                                ../images/categorias/nachos-600.webp 600w,
+                                ../images/categorias/nachos-800.webp 800w,
+                                ../images/categorias/nachos-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/categorias/nachos.jpg" alt="Imagen de plato de nachos" title="Nachos" />
+                    </picture>
                 </div>
 
                 <div class="place_content">

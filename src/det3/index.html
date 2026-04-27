@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía japonesa en Gastro. Sabores delicados, sushi, ramen y platos tradicionales que combinan técnica, frescura y armonía en cada bocado.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../main.scss" />
@@ -35,9 +36,25 @@
         
             <!-- Contingut home -->
 
-            <section class="hero">
+             <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/japones-600.webp"
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/japones-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/japones.png"
+                    alt="plato de Japonés"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/japones.png" alt="Imagen de plato japones" title="Asiatica" />
+                    <img src="../images/categorias/japones.png" alt="Imagen de plato con sushi" title="Sushi"/>
                     <h1 class="hero_title">Descubre la esencia de la gastronomía japonesa</h1>
                     <p class="hero_desc">
                         Explora la delicadeza del sushi, la frescura de sus ingredientes y el arte culinario que convierte cada plato en una experiencia única
@@ -47,6 +64,7 @@
 
            <section class="place">
                 <div class="place_img">
+
                     <img src="../images/detalls/sushi.jpg" alt="Imagen de plato con sushi" title="Sushi" />
                 </div>
 

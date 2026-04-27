@@ -2,7 +2,7 @@
 import sharp from "sharp";
 import fs from "fs"; 
 
-const carpeta = "./src/images/detalls";
+const carpeta = "./src/images/categorias";
 
 const mides = [600, 800, 1200];
 
