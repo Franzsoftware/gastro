@@ -31,7 +31,7 @@
     height: 90vh;
 }
 
-@media (max-width: 00px) {
+@media (max-width: 900px) {
     .hero {
         background-image: url(./images/home/hero-800.webp);
     }
@@ -135,10 +135,6 @@
         margin: 30px 0px;
     }
 
-    .historia_content p {
-   
-    }
-    
     .historia_content {
         grid-template-columns: 1fr;
     }
@@ -250,6 +246,7 @@
     object-fit: cover;
     max-width: none;
     border-radius: 10px;
+    clip-path: ellipse(75% 60% at 50% 50%);
 }
 
 /* place content */
@@ -359,8 +356,7 @@
     transition: transform 0.6s ease, filter 0.4s ease;
 }
 
-
-.cat.hover img {
+.cat:hover img {
     transform: scale(1.08);
     filter: brightness(0.4);
 }
@@ -377,7 +373,7 @@
     transition: all 0.4s ease;
 }
 
-.cat.hover .cat_title {
+.cat:hover .cat_title {
     opacity: 1;
     transform: translateY(0);
 }
@@ -392,4 +388,130 @@
 
 .btn_cat {
   margin: 50px 0;
+}
+
+
+/* animacions */
+
+.hero_content {
+  animation: fadeUp 1s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* botons i imatges */
+
+.btn_cat {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_cat:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.chef_pic img, .place_img img {
+  transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.chef_pic:hover img, .place_img:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.85);
+}
+
+/* images transform categories */
+
+.cat {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cat:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.cat:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.4);
+}
+
+.cat:hover .cat_title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.plate {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: draw 2s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* svg button move */
+
+.svg_button {
+  display: block;
+  margin: 20px auto;
+}
+
+.plate {
+  fill: none;
+  stroke: var(--color_title);
+  stroke-width: 3;
+}
+
+.boton {
+  fill: var(--color_title);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* svg icon sobre */
+
+.btn_contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.icon_mail {
+  fill: none;
+  stroke: rgb(3, 220, 209);
+  stroke-width: 2;
+  animation: moveIcon 2.3s infinite ease-in-out;
+}
+
+@keyframes moveIcon {
+  0%, 100% {
+    transform: translateX(15px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
 }
