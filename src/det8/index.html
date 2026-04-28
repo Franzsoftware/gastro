@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det1.scss" />
         <link rel="stylesheet" href="../det6.scss" />
@@ -35,10 +37,30 @@
         <main class="det1_page">
         
             <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/ensalada-mobil.png?as=webp&width=600"
+                    type="image/webp">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/ensalada-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/ensalada.png"
+                    alt="Plato de ensalada"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/ensalada.png" alt="Imagen de ensalada" title="Plato de ensalada" />
+                    <img src="../images/categorias/ensalada.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/ensalada.png?as=webp&width=300 1x,
+                    ../images/categorias/ensalada.png?as=webp 2x
+                    "
+                    alt="Imagen de ensalada" title="Ensalada"/>
                     <h1 class="hero_title">Ensaladas frescas y llenas de sabor</h1>
                     <p class="hero_desc">Combinaciones ligeras y equilibradas que destacan por su frescura y variedad de ingredientes</p>
                 </div>
@@ -46,7 +68,24 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/ensalada-completa.jpg" alt="Imagen de ensalada" title="Ensalada" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/ensalada-completa-600.avif 600w,
+                            ../images/detalls/ensalada-completa-800.avif 800w,
+                            ../images/detalls/ensalada-completa-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/ensalada-completa-600.webp 600w,
+                            ../images/detalls/ensalada-completa-800.webp 800w,
+                            ../images/detalls/ensalada-completa-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/ensalada-completa.jpg" alt="Imagen de ensalada completa" title="Ensalada completa" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -82,14 +121,48 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/tomates.jpg" alt="Imagen de comida de tomates con queso" title="Tomates frescos" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/tomates-600.avif 600w,
+                            ../images/detalls/tomates-800.avif 800w,
+                            ../images/detalls/tomates-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/tomates-600.webp 600w,
+                            ../images/detalls/tomates-800.webp 800w,
+                            ../images/detalls/tomates-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/tomates.jpg" alt="Imagen de comida de tomates con queso" title="Tomates frescos" loading="lazy" />
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/ensalada-natural.jpg" alt="Imagen de ensalada" title="Ensalada" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/ensalada-natural-600.avif 600w,
+                            ../images/detalls/ensalada-natural-800.avif 800w,
+                            ../images/detalls/ensalada-natural-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/ensalada-natural-600.webp 600w,
+                            ../images/detalls/ensalada-natural-800.webp 800w,
+                            ../images/detalls/ensalada-natural-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/ensalada-natural.jpg" alt="Imagen de ensalada" title="Ensalada" loading="lazy" >
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -113,7 +186,7 @@
             </section>
 
             <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OXjEcbmp9-M?si=bTO7FqAlQzdmes7A" 
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/OXjEcbmp9-M?si=bTO7FqAlQzdmes7A" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>

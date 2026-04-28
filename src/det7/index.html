@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía mediterránea en Gastro. Sabores frescos, ingredientes de temporada y recetas tradicionales que reflejan la esencia de la dieta mediterránea.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det1.scss" />
         <link rel="stylesheet" href="../det6.scss" />
@@ -35,10 +37,30 @@
         <main class="det1_page">
         
             <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/pollo-mobil.png?as=webp&width=600"
+                    type="image/webp">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/pollo-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/pollo.png"
+                    alt="plato de pollo"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/pollo.png" alt="Imagen de pollo" title="Plato de pollo" />
+                    <img src="../images/categorias/pollo.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/pollo.png?as=webp&width=300 1x,
+                    ../images/categorias/pollo.png?as=webp 2x
+                    "
+                    alt="Imagen de pollo" title="Pollo"/>
                     <h1 class="hero_title">Cocina mediterránea auténtica</h1>
                     <p class="hero_desc">Sabores frescos y equilibrados que reflejan la tradición y la riqueza del Mediterráneo</p>
                 </div>
@@ -46,7 +68,24 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/pollo-plato.jpg" alt="Imagen de pollo" title="Pollo" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pollo-plato-600.avif 600w,
+                            ../images/detalls/pollo-plato-800.avif 800w,
+                            ../images/detalls/pollo-plato-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pollo-plato-600.webp 600w,
+                            ../images/detalls/pollo-plato-800.webp 800w,
+                            ../images/detalls/pollo-plato-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/pollo-plato.jpg" alt="Imagen de pollo" title="Pollo" loading="lazy" />
+                    </picture> 
                 </div>
 
                 <div class="place_content">
@@ -82,14 +121,48 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/tomates.jpg" alt="Imagen de comida de tomates con queso" title="Tomates frescos" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/tomates-600.avif 600w,
+                            ../images/detalls/tomates-800.avif 800w,
+                            ../images/detalls/tomates-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/tomates-600.webp 600w,
+                            ../images/detalls/tomates-800.webp 800w,
+                            ../images/detalls/tomates-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/tomates.jpg" alt="Imagen de comida de tomates con queso" title="Tomates frescos" loading="lazy" />
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/especies.jpg" alt="Imagen de especies" title="Especies" />
+                     <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/especies-600.avif 600w,
+                            ../images/detalls/especies-800.avif 800w,
+                            ../images/detalls/especies-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/especies-600.webp 600w,
+                            ../images/detalls/especies-800.webp 800w,
+                            ../images/detalls/especies-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/especies.jpg" alt="Imagen de especies" title="Especies" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -113,7 +186,7 @@
             </section>
 
             <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lGGJTU9WWDU?si=APKTXITFC2Nc9_YQ" title="YouTube video player" 
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/lGGJTU9WWDU?si=APKTXITFC2Nc9_YQ" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>

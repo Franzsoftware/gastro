@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía sin gluten en Gastro. Platos seguros, sabrosos y elaborados con ingredientes de calidad para disfrutar sin preocupaciones.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det1.scss" />
         <link rel="stylesheet" href="../det6.scss" />
@@ -35,10 +37,30 @@
         <main class="det1_page">
         
             <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/sin-gluten-plato-mobil.png?as=webp&width=600"
+                    type="image/webp">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/sin-gluten-plato-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/sin-gluten-plato.png"
+                    alt="plato de sin gluten"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/sin-gluten-plato.png" alt="Imagen de comida sin gluten" title="Sin gluten" />
+                    <img src="../images/categorias/sin-gluten-plato.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/sin-gluten-plato.png?as=webp&width=300 1x,
+                    ../images/categorias/sin-gluten-plato.png?as=webp 2x
+                    "
+                    alt="Imagen de sin gluten" title="Sin gluten"/>
                     <h1 class="hero_title">Cocina sin gluten, llena de sabor</h1>
                     <p class="hero_desc">Disfruta de una propuesta gastronómica pensada para todos, donde el sabor y la calidad son siempre la prioridad</p>
                 </div>
@@ -46,7 +68,24 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/pan-pizza.jpg" alt="Imagen de pan de pizza" title="Pan de pizza" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pan-pizza-600.avif 600w,
+                            ../images/detalls/pan-pizza-800.avif 800w,
+                            ../images/detalls/pan-pizza-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pan-pizza-600.webp 600w,
+                            ../images/detalls/pan-pizza-800.webp 800w,
+                            ../images/detalls/pan-pizza-1200.webp 1200w
+                            " type="image/webp">
+                    <img src="../images/detalls/pan-pizza.jpg" alt="Imagen de pan de pizza" title="Pan de pizza" loading="lazy"/>
+                </picture>
                 </div>
 
                 <div class="place_content">
@@ -82,14 +121,48 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/sin-gluten.jpg" alt="Imagen de comida sin gluten" title="Comida sin gluten" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/sin-gluten-600.avif 600w,
+                            ../images/detalls/sin-gluten-800.avif 800w,
+                            ../images/detalls/sin-gluten-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/sin-gluten-600.webp 600w,
+                            ../images/detalls/sin-gluten-800.webp 800w,
+                            ../images/detalls/sin-gluten-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/sin-gluten.jpg" alt="Imagen de comida sin gluten" title="Comida sin gluten" loading="lazy" />
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/pan.jpg" alt="Imagen de pan" title="Pan" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pan-600.avif 600w,
+                            ../images/detalls/pan-800.avif 800w,
+                            ../images/detalls/pan-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pan-600.webp 600w,
+                            ../images/detalls/pan-800.webp 800w,
+                            ../images/detalls/pan-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/pan.jpg" alt="Imagen de pan" title="Pan" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -114,7 +187,7 @@
             </section>
 
             <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sTdpoSu4dD8?si=qXB9aMO7sFDwtMzF" 
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/sTdpoSu4dD8?si=qXB9aMO7sFDwtMzF" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width"/>
         <meta name="description" content="Descubre la gastronomía japonesa en Gastro. Sabores delicados, sushi, ramen y platos tradicionales que combinan técnica, frescura y armonía en cada bocado.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det3.scss" />
@@ -40,7 +41,7 @@
                 <picture class="hero_bg">
                     <source 
                     media="(max-width: 600px)"
-                    srcset="../images/categorias/japones-600.webp"
+                    srcset="../images/categorias/japones-mobil.png?as=webp&width=600"
                     type="image/webp">
 
                     <source 
@@ -54,7 +55,12 @@
                     class="hero_img">
                 </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/japones.png" alt="Imagen de plato con sushi" title="Sushi"/>
+                    <img src="../images/categorias/japones.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/japones.png?as=webp&width=300 1x,
+                    ../images/categorias/japones.png?as=webp 2x
+                    "
+                    alt="Imagen de plato con sushi" title="Sushi"/>
                     <h1 class="hero_title">Descubre la esencia de la gastronomía japonesa</h1>
                     <p class="hero_desc">
                         Explora la delicadeza del sushi, la frescura de sus ingredientes y el arte culinario que convierte cada plato en una experiencia única
@@ -183,7 +189,7 @@
             </section>
 
             <section class="video">
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/NyMHqnZh0tU?si=qWEUYHNKdfmTFROA" 
+                   <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NyMHqnZh0tU?si=qWEUYHNKdfmTFROA" 
                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>

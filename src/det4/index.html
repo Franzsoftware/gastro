@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía vegana en Gastro. Platos saludables, ingredientes naturales y recetas creativas que demuestran que comer vegano puede ser delicioso y sorprendente.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det1.scss" />
@@ -35,10 +37,30 @@
         <main class="det1_page">
         
             <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/vegano-mobil.png?as=webp&width=600"
+                    type="image/webp">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/vegano-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/vegano.png"
+                    alt="plato de Vegano"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/vegano.png" alt="Imagen de plato con garbanzos" title="Garbanzos" />
+                    <img src="../images/categorias/vegano.png?as=webp&width=300"
+                    srcset="
+                        ../images/categorias/vegano.png?as=webp&width=300 1x,
+                        ../images/categorias/vegano.png?as=webp 2x
+                    "
+                    alt="Imagen de plato con vegano" title="Vegano"/>
                     <h1 class="hero_title">Cocina vegana llena de sabor</h1>
                     <p class="hero_desc">Descubre una propuesta gastronómica basada en ingredientes naturales, donde cada plato respeta el producto y sorprende por su creatividad</p>
                 </div>
@@ -46,7 +68,25 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/veganos.jpg" alt="Imagen de ensalada con tomate y queso" title="Ensalada de tomate" />
+                     <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/detalls/veganos-600.avif 600w,
+                                ../images/detalls/veganos-800.avif 800w,
+                                ../images/detalls/veganos-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/veganos-600.webp 600w,
+                            ../images/detalls/veganos-800.webp 800w,
+                            ../images/detalls/veganos-1200.webp 1200w
+                            " type="image/webp">
+
+                            <img src="../images/detalls/veganos.jpg" alt="Imagen de ensalada con tomate y queso" title="Ensalada de tomate" loading="lazy"/>
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -83,14 +123,48 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/vegano-comida.jpg" alt="Imagen de lechuga con cebolla" title="Ensalada de lechuga" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/detalls/vegano-comida-600.avif 600w,
+                                ../images/detalls/vegano-comida-800.avif 800w,
+                                ../images/detalls/vegano-comida-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                               sizes="(max-width: 768px) 100vw, 50vw"
+                               srcset="
+                                ../images/detalls/vegano-comida-600.webp 600w,
+                                ../images/detalls/vegano-comida-800.webp 800w,
+                                ../images/detalls/vegano-comida-1200.webp 1200w
+                            " type="image/webp">
+                    
+                            <img src="../images/detalls/vegano-comida.jpg" alt="Imagen de lechuga con cebolla" title="Ensalada de lechuga" loading="lazy"/>
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/restaurante-vegano.jpg" alt="Imagen de ensalada de pepino frio" title="Ensalada de pepino" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                                ../images/detalls/restaurante-vegano-600.avif 600w,
+                                ../images/detalls/restaurante-vegano-800.avif 800w,
+                                ../images/detalls/restaurante-vegano-1200.avif 1200w
+                            " type="image/avif">
+
+                            <source 
+                               sizes="(max-width: 768px) 100vw, 50vw"
+                               srcset="
+                                ../images/detalls/restaurante-vegano-600.webp 600w,
+                                ../images/detalls/restaurante-vegano-800.webp 800w,
+                                ../images/detalls/restaurante-vegano-1200.webp 1200w
+                            " type="image/webp">
+                    <img src="../images/detalls/restaurante-vegano.jpg" alt="Imagen de ensalada de pepino frio" title="Ensalada de pepino" loading="lazy"/>
                 </div>
 
                 <div class="place_content">
@@ -115,7 +189,7 @@
             </section>
 
             <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Or6A_xFdrUw?si=3Bx0uLxFdHmo_9pW" 
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Or6A_xFdrUw?si=3Bx0uLxFdHmo_9pW" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>

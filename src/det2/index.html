@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width"/>
         <meta name="description" content="Descubre la gastronomía mexicana a través de los tacos. Sabores intensos, ingredientes frescos y recetas tradicionales que convierten cada plato en una experiencia única.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det2.scss" />
@@ -40,7 +41,7 @@
                 <picture class="hero_bg">
                     <source 
                     media="(max-width: 600px)"
-                    srcset="../images/categorias/tacos-600.webp"
+                    srcset="../images/categorias/tacos-mobil.png?as=webp&width=600"
                     type="image/webp">
 
                     <source 
@@ -54,7 +55,12 @@
                     class="hero_img">
                 </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/tacos.png" alt="Imagen de plato con tacos" title="Tacos"/>
+                    <img src="../images/categorias/tacos.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/tacos.png?as=webp&width=300 1x,
+                    ../images/categorias/tacos.png?as=webp 2x
+                    "
+                    alt="Imagen de plato con tacos" title="Tacos"/>
                     <h1 class="hero_title">Descubre la esencia de la gastronomía mexicana</h1>
                     <p class="hero_desc">Explora sabores intensos, ingredientes frescos y recetas 
                         tradicionales que convierten cada plato en una experiencia única llena de color y sabor</p>

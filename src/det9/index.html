@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="Descubre la gastronomía italiana en Gastro. Pasta, pizza y recetas tradicionales con ingredientes frescos que reflejan el auténtico sabor de Italia.">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" type="image/svg" sizes="32x32" href="../images/logo/favicon.svg">
         <link rel="stylesheet" href="../main.scss" />
         <link rel="stylesheet" href="../det1.scss" />
         <link rel="stylesheet" href="../det6.scss" />
@@ -35,10 +37,30 @@
         <main class="det1_page">
         
             <!-- Contingut home -->
+            <section class="hero1">
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="../images/categorias/pasta-mobil.png?as=webp&width=600"
+                    type="image/webp">
 
-            <section class="hero">
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="../images/categorias/pasta-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="../images/categorias/pasta.png"
+                    alt="Plato de pasta"
+                    class="hero_img">
+                </picture>
                 <div class="hero_content">
-                    <img src="../images/categorias/pasta.png" alt="Imagen de pasta" title="Plato de pasta" />
+                    <img src="../images/categorias/pasta.png?as=webp&width=300" 
+                    srcset="
+                    ../images/categorias/pasta.png?as=webp&width=300 1x,
+                    ../images/categorias/pasta.png?as=webp 2x
+                    "
+                    alt="Imagen de pasta" title="Pasta"/>
                     <h1 class="hero_title">Auténtica cocina italiana</h1>
                     <p class="hero_desc">Sabores tradicionales que combinan sencillez, calidad y pasión por la buena comida</p>
                 </div>
@@ -46,7 +68,24 @@
 
            <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/pizza-jamon.jpg" alt="Imagen de pizza" title="Pizza" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pizza-jamon-600.avif 600w,
+                            ../images/detalls/pizza-jamon-800.avif 800w,
+                            ../images/detalls/pizza-jamon-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pizza-jamon-600.webp 600w,
+                            ../images/detalls/pizza-jamon-800.webp 800w,
+                            ../images/detalls/pizza-jamon-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/pizza-jamon.jpg" alt="Imagen de pizza" title="Pizza" loading="lazy"/>
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -83,14 +122,48 @@
                 </div>
 
                 <div class="place_img">
-                    <img src="../images/detalls/pasta-fresca.jpg" alt="Imagen de comida de pasta fresca" title="Pasta fresca" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pasta-fresca-600.avif 600w,
+                            ../images/detalls/pasta-fresca-800.avif 800w,
+                            ../images/detalls/pasta-fresca-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pasta-fresca-600.webp 600w,
+                            ../images/detalls/pasta-fresca-800.webp 800w,
+                            ../images/detalls/pasta-fresca-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/pasta-fresca.jpg" alt="Imagen de comida de pasta fresca" title="Pasta fresca" loading="lazy" />
+                    </picture>
                 </div>
 
             </section>
 
             <section class="place">
                 <div class="place_img">
-                    <img src="../images/detalls/pizza-queso.jpg" alt="Imagen de pizza de queso" title="Pizza de queso" />
+                    <picture>
+                        <source 
+                           sizes="(max-width: 768px) 100vw, 50vw"
+                           srcset="
+                            ../images/detalls/pizza-queso-600.avif 600w,
+                            ../images/detalls/pizza-queso-800.avif 800w,
+                            ../images/detalls/pizza-queso-1200.avif 1200w
+                            " type="image/avif">
+
+                        <source 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            srcset="
+                            ../images/detalls/pizza-queso-600.webp 600w,
+                            ../images/detalls/pizza-queso-800.webp 800w,
+                            ../images/detalls/pizza-queso-1200.webp 1200w
+                            " type="image/webp">
+                        <img src="../images/detalls/pizza-queso.jpg" alt="Imagen de pizza de queso" title="Pizza de queso" loading="lazy" />
+                    </picture>
                 </div>
 
                 <div class="place_content">
@@ -113,7 +186,7 @@
             </section>
 
             <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ToylJwYayrM?si=y9CD-RKBQEMW5TmN" 
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ToylJwYayrM?si=y9CD-RKBQEMW5TmN" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
