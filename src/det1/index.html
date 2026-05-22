@@ -66,7 +66,9 @@
                     <img 
                     src="../images/categorias/postres-1200.webp"
                     alt="Postre de pistacho"
-                    class="hero_img">
+                    class="hero_img"
+                    fetchpriority="high"
+                    loading="eager">
                 </picture>
                 <div class="hero_content">
                     <img src="../images/categorias/postres.png?as=webp&width=300" 
@@ -74,7 +76,9 @@
                     ../images/categorias/postres.png?as=webp&width=300 1x,
                     ../images/categorias/postres.png?as=webp 2x
                     "
-                    alt="Imagen de postre" title="Postre" />
+                    alt="Imagen de postre" title="Postre" 
+                    fetchpriority="high"
+                    loading="eager" />
                     <h1 class="hero_title">Descubre el mundo de los postres</h1>
                     <p class="hero_desc">Sumérgete en una experiencia dulce donde cada creación combina sabor, creatividad y pasión por la repostería</p>
                 </div>
@@ -215,7 +219,24 @@
         <footer class="box_footer">
 
             <section class="box_foot">
-                <img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /> 
+                <a href="../index.html">
+                    <picture>
+                        <source
+                            srcset="../images/logo/logo.png?as=avif&width=300"
+                            type="image/avif"
+                        >
+
+                        <source
+                            srcset="../images/logo/logo.png?as=webp&width=300"
+                            type="image/webp"
+                        >
+
+                        <img 
+                            src="../images/logo/logo.png" 
+                            title="Logo de Gastro Web" 
+                            alt="Imagen de Logo de Gastro Web" /> 
+                    </picture>
+                </a>
                 <p class="p_foot">Gastro es una plataforma dedicada a los amantes de la buena comida. 
                     Descubre restaurantes, explora nuevas tendencias culinarias y encuentra 
                     recomendaciones cuidadosamente seleccionadas para disfrutar de experiencias 

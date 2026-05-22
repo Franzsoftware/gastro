@@ -69,7 +69,9 @@
                     <img 
                     src="../images/categorias/tacos.png"
                     alt="Plato de tacos"
-                    class="hero_img">
+                    class="hero_img"
+                    fetchpriority="high"
+                    loading="eager" />
                 </picture>
                 <div class="hero_content">
                     <img src="../images/categorias/tacos.png?as=webp&width=300" 
@@ -77,7 +79,9 @@
                     ../images/categorias/tacos.png?as=webp&width=300 1x,
                     ../images/categorias/tacos.png?as=webp 2x
                     "
-                    alt="Imagen de plato con tacos" title="Tacos"/>
+                    alt="Imagen de plato con tacos" title="Tacos"
+                    fetchpriority="high"
+                    loading="eager" />
                     <h1 class="hero_title">Descubre la esencia de la gastronomía mexicana</h1>
                     <p class="hero_desc">Explora sabores intensos, ingredientes frescos y recetas 
                         tradicionales que convierten cada plato en una experiencia única llena de color y sabor</p>
@@ -181,7 +185,7 @@
                                 ../images/categorias/nachos-800.webp 800w,
                                 ../images/categorias/nachos-1200.webp 1200w
                             " type="image/webp">
-                        <img src="../images/categorias/nachos.jpg" alt="Imagen de plato de nachos" title="Nachos" />
+                        <img src="../images/categorias/nachos.jpg" alt="Imagen de plato de nachos" title="Nachos" loading="lazy"/>
                     </picture>
                 </div>
 
@@ -217,7 +221,24 @@
         <footer class="box_footer">
 
             <section class="box_foot">
-                <img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /> 
+                <a href="../index.html">
+                    <picture>
+                        <source
+                            srcset="../images/logo/logo.png?as=avif&width=300"
+                            type="image/avif"
+                        >
+
+                        <source
+                            srcset="../images/logo/logo.png?as=webp&width=300"
+                            type="image/webp"
+                        >
+
+                        <img 
+                            src="../images/logo/logo.png" 
+                            title="Logo de Gastro Web" 
+                            alt="Imagen de Logo de Gastro Web" /> 
+                    </picture>
+                </a>
                 <p class="p_foot">Gastro es una plataforma dedicada a los amantes de la buena comida. 
                     Descubre restaurantes, explora nuevas tendencias culinarias y encuentra 
                     recomendaciones cuidadosamente seleccionadas para disfrutar de experiencias 

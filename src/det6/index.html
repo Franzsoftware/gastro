@@ -71,7 +71,7 @@
                     alt="plato de sin gluten"
                     fetchpriority="high"
                     loading="eager"
-                    class="hero_img">
+                    class="hero_img" />
                 </picture>
                 <div class="hero_content">
                     <img src="../images/categorias/sin-gluten-plato.png?as=webp&width=300" 
@@ -79,7 +79,9 @@
                     ../images/categorias/sin-gluten-plato.png?as=webp&width=300 1x,
                     ../images/categorias/sin-gluten-plato.png?as=webp 2x
                     "
-                    alt="Imagen de sin gluten" title="Sin gluten"/>
+                    alt="Imagen de sin gluten" title="Sin gluten"
+                    fetchpriority="high"
+                    loading="eager" />
                     <h1 class="hero_title">Cocina sin gluten, llena de sabor</h1>
                     <p class="hero_desc">Disfruta de una propuesta gastronómica pensada para todos, donde el sabor y la calidad son siempre la prioridad</p>
                 </div>
@@ -217,7 +219,24 @@
         <footer class="box_footer">
 
             <section class="box_foot">
-                <img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /> 
+                <a href="../index.html">
+                    <picture>
+                        <source
+                            srcset="../images/logo/logo.png?as=avif&width=300"
+                            type="image/avif"
+                        >
+
+                        <source
+                            srcset="../images/logo/logo.png?as=webp&width=300"
+                            type="image/webp"
+                        >
+
+                        <img 
+                            src="../images/logo/logo.png" 
+                            title="Logo de Gastro Web" 
+                            alt="Imagen de Logo de Gastro Web" /> 
+                    </picture>
+                </a>  
                 <p class="p_foot">Gastro es una plataforma dedicada a los amantes de la buena comida. 
                     Descubre restaurantes, explora nuevas tendencias culinarias y encuentra 
                     recomendaciones cuidadosamente seleccionadas para disfrutar de experiencias 
