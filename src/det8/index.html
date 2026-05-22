@@ -18,7 +18,24 @@
    
         <header class="box_header">
     
-            <a href="../index.html"><img src="../images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /></a>
+            <a href="../index.html">
+                <picture>
+                    <source
+                        srcset="../images/logo/logo.png?as=avif&width=300"
+                        type="image/avif"
+                    >
+
+                    <source
+                        srcset="../images/logo/logo.png?as=webp&width=300"
+                        type="image/webp"
+                    >
+
+                    <img 
+                        src="../images/logo/logo.png" 
+                        title="Logo de Gastro Web" 
+                        alt="Imagen de Logo de Gastro Web" /> 
+                </picture>
+            </a>
 
             <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <i class="fas fa-bars"></i>
@@ -52,6 +69,8 @@
                     <img 
                     src="../images/categorias/ensalada.png"
                     alt="Plato de ensalada"
+                    fetchpriority="high"
+                    loading="eager"
                     class="hero_img">
                 </picture>
                 <div class="hero_content">

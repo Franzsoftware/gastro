@@ -20,44 +20,49 @@
 /* hero */
 
 .hero {
-    background-image: url(./images/home/hero-1200.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     position: relative;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    overflow: hidden;
 }
 
-@media (max-width: 900px) {
-    .hero {
-        background-image: url(./images/home/hero-800.webp);
-    }
+picture.hero_bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
 }
 
-@media (max-width: 600px) {
-    .hero {
-        background-image: url(./images/home/hero-600.webp);
-    }
+.hero_bg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: none;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 
 .hero_content {
     position: relative;
-    z-index: 1;
-    color: var(--color_primary);
+    z-index: 2;
+    color: white;
     text-align: center;
-    max-width: 600px;
-    padding: 140px;
+    max-width: 700px;
+    padding: 20px;
 }
+
 
 .hero_title {
     font-size: clamp(20px, 5vw, 40px);

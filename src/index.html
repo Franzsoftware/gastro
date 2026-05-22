@@ -8,7 +8,7 @@
         <link rel="icon" type="image/svg" sizes="32x32" href="./images/logo/favicon.svg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="./main.scss" />
-        <script type="module" src="./main.js"></script>
+        <script type="module" src="./main.js" ></script>
         <title>Web Gastro | Restaurante</title>
     </head>
 
@@ -16,7 +16,24 @@
    
         <header class="box_header">
     
-            <a href="./index.html"><img src="./images/logo/logo.png" title="Logo de Gastro Web" alt="Imagen de Logo de Gastro Web" /> </a>
+            <a href="./index.html">
+                <picture>
+                    <source
+                        srcset="./images/logo/logo.png?as=avif&width=300"
+                        type="image/avif"
+                    >
+
+                    <source
+                        srcset="./images/logo/logo.png?as=webp&width=300"
+                        type="image/webp"
+                    >
+
+                    <img 
+                        src="./images/logo/logo.png" 
+                        title="Logo de Gastro Web" 
+                        alt="Imagen de Logo de Gastro Web" /> 
+                </picture>
+            </a>
 
             <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación">
                 <i class="fas fa-bars"></i>
@@ -37,11 +54,37 @@
             <!-- Contingut home -->
 
             <section class="hero">
+
+                <picture class="hero_bg">
+                    <source 
+                    media="(max-width: 600px)"
+                    srcset="./images/home/hero-600.webp"
+                    type="image/webp">
+
+                    <source 
+                    media="(min-width: 601px)"
+                    srcset="./images/home/hero-1200.webp"
+                    type="image/webp">
+
+                    <img 
+                    src="./images/home/hero-1200.webp"
+                    alt="Imagen gastronómica"
+                    class="hero_img"
+                    fetchpriority="high"
+                    loading="eager">
+                </picture>
+
                 <div class="hero_content">
-                    <h1 class="hero_title">Descubre la esencia de la gastronomía</h1>
-                    <p class="hero_desc">Explora sabores únicos, restaurantes excepcionales y experiencias culinarias
-                        pensadas para quienes disfrutan de la buena comida</p>
+                    <h1 class="hero_title">
+                        Descubre la esencia de la gastronomía
+                    </h1>
+
+                    <p class="hero_desc">
+                        Explora sabores únicos, restaurantes excepcionales y experiencias culinarias
+                        pensadas para quienes disfrutan de la buena comida
+                    </p>
                 </div>
+
             </section>
             
             <section class="intro">
