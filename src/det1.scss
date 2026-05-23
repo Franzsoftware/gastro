@@ -165,28 +165,69 @@ picture.hero_bg {
     }
 }
 
+
 /* video */
 
 .video {
     position: relative;
     width: 100%;
-    padding-bottom: 20%;
-    height: 0;
+    aspect-ratio: 35 / 8;
+    overflow: hidden;
 }
 
-@media (max-width: 768px) {
-   .video {
-     padding-bottom: 50%;
-   }
+/* background */
+
+picture.video_bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
+
+/* image */
+
+.video_bg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: none;
+}
+
+/* container */
+
+.youtube-lite {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* iframe */
 
 .video iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
 }
 
+/* button */
 
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
 

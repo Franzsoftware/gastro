@@ -45,3 +45,31 @@ hamburger.addEventListener('click', () => {
 });
 
 
+// youtube
+
+document.querySelectorAll('.youtube-lite').forEach(video => {
+
+    video.addEventListener('click', () => {
+
+        const iframe = document.createElement('iframe');
+
+        iframe.src = `https://www.youtube-nocookie.com/embed/${video.dataset.videoid}?autoplay=1`;
+
+        iframe.allowFullscreen = true;
+
+        iframe.loading = "lazy";
+
+        iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+        iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+
+        video.innerHTML = '';
+
+        video.appendChild(iframe);
+
+    });
+
+});
+
+
