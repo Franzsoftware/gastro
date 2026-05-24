@@ -28,9 +28,10 @@
                     >
 
                     <img 
-                        src="../images/logo/logo.png" 
+                        src="../images/logo/logo.png?as=avif&width=300" 
                         title="Logo de Gastro Web" 
-                        alt="Imagen de Logo de Gastro Web" /> 
+                        alt="Imagen de Logo de Gastro Web"
+                        width="1024" height="1024" /> 
                 </picture>
             </a>
 
@@ -79,7 +80,7 @@
                     alt="plato de Japonés"
                     class="hero_img"
                     fetchpriority="high"
-                    loading="eager" >
+                    loading="eager" width="612" height="408">
                 </picture>
                 <div class="hero_content">
                     <img src="../images/categorias/japones.png?as=webp&width=300" 
@@ -89,7 +90,8 @@
                     "
                     alt="Imagen de plato con sushi" title="Sushi"
                     fetchpriority="high"
-                    loading="eager" />
+                    loading="eager" 
+                    width="612" height="408" />
                     <h1 class="hero_title">Descubre la esencia de la gastronomía japonesa</h1>
                     <p class="hero_desc">
                         Explora la delicadeza del sushi, la frescura de sus ingredientes y el arte culinario que convierte cada plato en una experiencia única
@@ -101,7 +103,7 @@
                 <div class="place_img">
                     <picture>
                         <source 
-                           sizes="(max-width: 768px) 100vw, 50vw"
+                           sizes="(max-width: 768px) 100vw, 30vw"
                            srcset="
                                 ../images/detalls/sushi-600.avif 600w,
                                 ../images/detalls/sushi-800.avif 800w,
@@ -109,19 +111,19 @@
                             " type="image/avif">
 
                             <source 
-                               sizes="(max-width: 768px) 100vw, 50vw"
+                               sizes="(max-width: 768px) 100vw, 30vw"
                                srcset="
                                 ../images/detalls/sushi-600.webp 600w,
                                 ../images/detalls/sushi-800.webp 800w,
                                 ../images/detalls/sushi-1200.webp 1200w
                             " type="image/webp">
 
-                        <img src="../images/detalls/sushi.jpg" alt="Imagen de plato con sushi" title="Sushi" loading="lazy"/>
+                        <img src="../images/detalls/sushi-800.webp" alt="Imagen de plato con sushi" title="Sushi" loading="lazy" width="800" height="500" />
                     </picture>
                 </div>
 
                 <div class="place_content">
-                    <h3 class="place_cont_title">Experiencias japonesas en Gastro</h3>
+                    <h2 class="place_cont_title">Experiencias japonesas en Gastro</h2>
                     <p class="place_cont_subtitle">
                         Sumérgete en la tradición de la cocina japonesa, donde cada pieza de sushi es una combinación perfecta de técnica, precisión y sabor. 
                         En Gastro cuidamos cada detalle para ofrecerte una experiencia gastronómica auténtica.
@@ -154,7 +156,7 @@
                 <div class="place_img">
                      <picture>
                         <source 
-                           sizes="(max-width: 768px) 100vw, 50vw"
+                           sizes="(max-width: 768px) 100vw, 30vw"
                            srcset="
                                 ../images/detalls/maquis-600.avif 600w,
                                 ../images/detalls/maquis-800.avif 800w,
@@ -162,14 +164,14 @@
                             " type="image/avif">
 
                             <source 
-                               sizes="(max-width: 768px) 100vw, 50vw"
+                               sizes="(max-width: 768px) 100vw, 30vw"
                                srcset="
                                 ../images/detalls/maquis-600.webp 600w,
                                 ../images/detalls/maquis-800.webp 800w,
                                 ../images/detalls/maquis-1200.webp 1200w
                             " type="image/webp">
 
-                        <img src="../images/detalls/maquis.jpg" alt="Imagen de plato de maquis de salmón" title="Maquis de salmón" loading="lazy"/>
+                        <img src="../images/detalls/maquis-800.webp" alt="Imagen de plato de maquis de salmón" title="Maquis de salmón" loading="lazy" width="800" height="541" />
                     </picture>
                 </div>
 
@@ -179,7 +181,7 @@
                 <div class="place_img">
                     <picture>
                         <source 
-                           sizes="(max-width: 768px) 100vw, 50vw"
+                           sizes="(max-width: 768px) 100vw, 30vw"
                            srcset="
                                 ../images/detalls/sopa-japonesa-600.avif 600w,
                                 ../images/detalls/sopa-japonesa-800.avif 800w,
@@ -187,13 +189,13 @@
                             " type="image/avif">
 
                             <source 
-                               sizes="(max-width: 768px) 100vw, 50vw"
+                               sizes="(max-width: 768px) 100vw, 30vw"
                                srcset="
                                 ../images/detalls/sopa-japonesa-600.webp 600w,
                                 ../images/detalls/sopa-japonesa-800.webp 800w,
                                 ../images/detalls/sopa-japonesa-1200.webp 1200w
                             " type="image/webp">
-                        <img src="../images/detalls/sopa-japonesa.jpg" alt="Imagen de Sopa Japonesa" title="Sopa Japonesa" loading="lazy"/>
+                        <img src="../images/detalls/sopa-japonesa-800.webp" alt="Imagen de Sopa Japonesa" title="Sopa Japonesa" loading="lazy" width="800" height="533" />
                     </picture>
                 </div>
 
@@ -218,11 +220,27 @@
             </section>
 
             <section class="video">
-                   <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NyMHqnZh0tU?si=qWEUYHNKdfmTFROA" 
-                   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                <div class="youtube-lite" data-videoid="NyMHqnZh0tU">
+                    <picture class="video_bg">
+                        <img 
+                        src="https://img.youtube.com/vi/NyMHqnZh0tU/hq720.jpg"
+                        alt="Video de YouTube"
+                        title="Video sobre comida mejicana"
+                        class="video_img"
+                        loading="lazy">
+                    </picture>
+
+                    <button class="buto-play" aria-label="Reproducir vídeo" title="Reproducir video de YouTube"> 
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"
+                            width="30"
+                            height="30"
+                            fill="currentColor">
+
+                            <path d="M73 39c-14.8-8.3-33-8-47.4 .9S0 62.1 0 79V433c0 16.9 9.2 32.5 24 39.1s32.6 5.9 46.7-1.9l288-176c13.5-8.2 21.3-22.8 21.3-38.2s-7.7-29.9-21.3-38.2L73 39z"/>
+                        </svg>
+                    </button>
             </section>
 
         </main>
@@ -243,9 +261,10 @@
                         >
 
                         <img 
-                            src="../images/logo/logo.png" 
+                            src="../images/logo/logo.png?as=avif&width=300" 
                             title="Logo de Gastro Web" 
-                            alt="Imagen de Logo de Gastro Web" /> 
+                            alt="Imagen de Logo de Gastro Web" 
+                            width="1024" height="1024" /> 
                     </picture>
                 </a> 
                 <p class="p_foot">Gastro es una plataforma dedicada a los amantes de la buena comida. 
